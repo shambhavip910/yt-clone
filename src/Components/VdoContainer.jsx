@@ -12,7 +12,7 @@ const VdoContainer = () => {
   const getvideos=async () => {
     const fetchdata=await fetch(YOUTUBE_URL)
     const json=await fetchdata.json();
-    // console.log(json.items);
+    console.log(json);
     setvideos(json.items)
   }
   return (
@@ -24,3 +24,5 @@ const VdoContainer = () => {
 }
 
 export default VdoContainer
+
+
